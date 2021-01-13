@@ -32,7 +32,7 @@
     </form>
 
 <table style="margin-left: 20px;">
-
+    
     <!-- For loop logic of jinja template -->
     {%for i in range(0, len)%}
 
@@ -49,9 +49,9 @@
             </tr>
     </th>
     <tr>
-
-        <td>{{rows[i][0].strftime("%d/%m/%Y")}}</td>
-        <td>{{rows[i][1].strftime("%d/%m/%Y")}}</td>
+	
+        <td>{{rows[i][0]}}</td>
+        <td>{{rows[i][1]}}</td>
         <td>{{rows[i][2]}}</td>
         <td>{{rows[i][3]}}</td>
 	<td>{{rows[i][4]}}</td>
@@ -92,7 +92,7 @@
 	<td>{{rows[i][10]}}</td>		
 	<td>{{rows[i][11]}}</td>
 	<td>{{rows[i][12]}}</td>        
-	<td>{{rows[i][13].strftime("%d/%m/%Y")}}</td>
+	<td>{{rows[i][13]}}</td>
         <td>{{rows[i][14]}}</td>
         
         

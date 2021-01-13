@@ -2,12 +2,33 @@
 <html>
   <head>
     <title>FLASK CSV File Upload</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/	bootstrap.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
     <h1>Upload your CSV file</h1>
-    <form method="POST" action="" enctype="multipart/form-data">
-      <p><input type="file" name="file"></p>
-      <p><input type="submit" value="Submit"></p>
+
+	<form method="POST" action="" enctype="multipart/form-data">
+	  <div class="form-group">
+	    	<p><input type="file" name="file" class="btn btn-primary btn-lg"></p>
+	      <button type="submit" class="btn btn-success btn-lg">Submit</button>
+	  </div>
+	  
+	</form>
+
+
+	<h1>Search By Transation ID</h1>
+    <form method="POST" action="search" >
+	<div class="form-group">
+	    	<button type="submit" class="btn btn-primary btn-lg">Search Page</button>
+	  </div>
+      
     </form>
+	
+
   </body>
 </html>
